@@ -14,7 +14,7 @@ return {
     },
     config = function ()
       require("mason-lspconfig").setup({
-        ensure_installed = { "lua_ls", "lua", "tsserver", "ansiblels", "java_language_server" }
+        ensure_installed = { "lua_ls", "tsserver", "ansiblels", "java_language_server" }
       })
     end
   },
