@@ -12,6 +12,11 @@ return {
     opts = {
       auto_install = true,
     },
+    config = function ()
+      require("mason-lspconfig").setup({
+        ensure_installed = { "lua_ls", "lua", "tsserver", "ansiblels", "java_language_server" }
+      })
+    end
   },
   {
     "neovim/nvim-lspconfig",
